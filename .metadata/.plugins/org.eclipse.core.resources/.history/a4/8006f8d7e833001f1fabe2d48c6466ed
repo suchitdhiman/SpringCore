@@ -1,0 +1,14 @@
+package com.mapexample;
+
+import java.util.HashMap;
+
+public class FirstMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap<Integer, String> hm1 = new HashMap<>();
+
+	}
+
+}

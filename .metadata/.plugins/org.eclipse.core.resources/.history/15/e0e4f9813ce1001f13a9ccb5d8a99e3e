@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframwork.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/xmlSchema-instance"
+ xmlns:context="http://www.springframwork.org/schema/context"
+ xsi:schemaLocation="http://www.springframwork.org/schema/beans
+ http://www.springframwork.org/schema/beans/spring-beans.xsd
+ http://www.springframwork.org/schema/context
+ http://www.springframwork.org/schema/context/spring-context.xsd">
+ 
+ <!-- spring bean cfg by enabling static factory method bean instantiation -->
+ <bean id="ldt" class="java.time.LocalDateTime" factory-method ="now" />
+ 
+ <!--  enable component scanning to recongize user - defind @component classes as spring beans -->
+ <context:context-scan base-package ="com.sk.sbeans" />
+ 
+ 
+ 
+ 
+ 
+ </beans>

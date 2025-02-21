@@ -1,0 +1,20 @@
+package com.sk.client;
+
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+public class DependencyInjectionTest {
+    public static void main(String[] args) {
+        // Create the IOC container
+        FileSystemXmlApplicationContext ctx = new FileSystemXmlApplicationContext("src/com/sk/cfgs/applicationContext.xml");
+
+        // Get target bean
+        WishMessageGenrator generator = ctx.getBean("wmg", WishMessageGenrator.class);
+
+        // Invoke the method
+        String result = generator.generateWishMessage("Suchit");
+        System.out.println("Result: " + result);
+
+        // Close context (not needed for ClassPathXmlApplicationContext)
+        ((ClassPathXmlApplicationContext) ctx).close();
+    }
+}

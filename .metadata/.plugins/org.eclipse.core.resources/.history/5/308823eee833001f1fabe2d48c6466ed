@@ -1,0 +1,18 @@
+package com.mapexample;
+
+import java.util.HashMap;
+
+public class FirstMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap<Integer, String> hm1 = new HashMap<>();
+		
+		hm1.put(101, "Suchit Kumar");
+		hm1.put(102, "Basant Kumar");
+		System.out.println(hm1);
+
+	}
+
+}
