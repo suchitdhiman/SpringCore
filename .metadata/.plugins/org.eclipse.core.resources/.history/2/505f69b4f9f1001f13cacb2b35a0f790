@@ -1,0 +1,21 @@
+package com.sk.sbeans;
+
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class WishMesaageConstructor {
+	
+	private Date date;
+	
+	@Autowired
+	public WishMesaageConstructor(Date date) {
+		System.out.println("WishMesaageConstructor-1 param constructor");
+		this.localDate = localDate;
+		}
+	
+	String date = localDate.datesUntil(localDate);
+
+}

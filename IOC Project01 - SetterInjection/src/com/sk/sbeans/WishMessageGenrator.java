@@ -10,6 +10,8 @@ public class WishMessageGenrator {
 
 	// has a property
 	private LocalDateTime localdatetime;
+	
+	
 
 	/**
 	 * @param localdatetime

@@ -1,0 +1,13 @@
+package com.sk.sbeans;
+
+import java.time.LocalDateTime;
+
+public class WishMesaageConstructor {
+	
+	private LocalDateTime localDateTime;
+	
+	public WishMessageGenrator(LocalDateTime localDateTime) {
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.sk.sbeans;
+
+import java.time.LocalDateTime;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class WishMesaageConstructor {
+	
+	private LocalDateTime localDateTime;
+	
+	@Autowired
+	public WishMesaageConstructor(LocalDateTime localDateTime) {
+		System.out.println("WishMesaageConstructor-1 param constructor");
+		this.localDateTime = localDateTime;
+		}
+
+}

@@ -1,0 +1,22 @@
+package com.sk.sbeans;
+
+import java.time.LocalDate;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class WishMesaageConstructor {
+	
+	private LocalDate localDate;
+	
+	@Autowired
+	public WishMesaageConstructor(LocalDate localDate) {
+		System.out.println("WishMesaageConstructor-1 param constructor");
+		this.localDate = localDate;
+		}
+	
+	String date= 
+
+}

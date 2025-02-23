@@ -1,0 +1,27 @@
+package com.sk.sbeans;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class FiledInjection {
+	
+	@Autowired
+	LocalDateTime localDateTime;
+	@Autowired
+	Date date;
+	
+	public String morningMessage(LocalDateTime localDateTime, Date date) {
+		int currentHour = localDateTime.getHour();
+		if(currentHour < 12) {
+			System.out.println("Good Morning!");
+		}
+	}
+	
+	
+
+}

@@ -1,0 +1,25 @@
+package com.sk.sbeans;
+
+import java.time.LocalDateTime;
+import java.util.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("wmc")
+public class WishMesaageConstructor {
+	
+	private LocalDateTime date;
+	
+	@Autowired
+	public WishMesaageConstructor(LocalDateTime date) {
+		System.out.println("WishMesaageConstructor-1 param constructor");
+		this.date = date;
+		}
+	
+	//method
+	public void findDay(String  user) {
+	int currentDate  = date.getDayOfMonth();
+	System.out.println("this day is: "+currentDate+user);
+	}
+}
