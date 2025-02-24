@@ -106,3 +106,42 @@ java.net.URISyntaxException: Illegal character in authority at index 19: project
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-02-24 21:40:51.388
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-24 23:45:06.250
+!MESSAGE Classpath changed for project: IOCProj01-Injections
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-24 23:45:06.479
+!MESSAGE Classpath changed for project: IOCProj01-Injections
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-24 23:48:08.808
+!MESSAGE Classpath changed for project: IOCProj01-Injections
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-24 23:48:08.809
+!MESSAGE Boot project ADDED: IOCProj01-Injections
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-24 23:48:09.535
+!MESSAGE Classpath changed for project: IOCProj01-Injections
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-24 23:51:52.566
+!MESSAGE Classpath changed for project: IOC Project01 - SetterInjection
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-24 23:51:52.567
+!MESSAGE Boot project REMOVED: IOC Project01 - SetterInjection
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-02-24 23:51:52.590
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-02-24 23:51:52.593
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-02-24 23:51:52.597
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-02-24 23:51:52.598
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-02-24 23:51:52.608
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-02-24 23:51:52.611
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
