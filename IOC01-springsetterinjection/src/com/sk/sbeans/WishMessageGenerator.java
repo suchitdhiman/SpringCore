@@ -1,6 +1,7 @@
 package com.sk.sbeans;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -11,22 +12,31 @@ public class WishMessageGenerator {
 	
 	private LocalDateTime dateTime;
 	
-	public WishMessageGenerator() {
+	private Date date;
+	
+	@Autowired
+	public WishMessageGenerator(LocalDateTime dateTime, Date date) {
 		System.out.println("WishMessageGenerator.WishMessageGenerator()");
+		this.dateTime = dateTime;
+		this.date = date;
 	}
 	
-	//setter method for setter injection
-	@Autowired
-	public void setDateTime(LocalDateTime dateTime) {
-		System.out.println("WishMessageGenerator.setDateTime()");
-		this.dateTime = dateTime;
-		
-	}
+	
+	
+//	//setter method for setter injection
+//	@Autowired
+//	public void setDateTime(LocalDateTime dateTime) {
+//		System.out.println("WishMessageGenerator.setDateTime()");
+//		this.dateTime = dateTime;
+//		
+//	}
 	
 	//b.method
 	public String generateWishMessage(String user) {
 		
 		System.out.println("WishMessageGenerator.generateWishMessage()");
+		
+		System.out.println("Today date is :"+date);
 		
 		//get current hour of the day
 		int hour = dateTime.getHour();
