@@ -14,12 +14,30 @@ public class WishMessageGenerator {
 	
 	private Date date;
 	
+	
+	//arbitary method injection
 	@Autowired
-	public WishMessageGenerator(LocalDateTime dateTime, Date date) {
-		System.out.println("WishMessageGenerator.WishMessageGenerator()");
-		this.dateTime = dateTime;
+	public void dateinjection(Date date) {
+		System.out.println("dateInjection working");
 		this.date = date;
 	}
+	
+	
+	//arbitary method injection
+	@Autowired
+	public void dateTimeinjection(LocalDateTime dateTime) {
+		System.out.println("localdatetime injection is working");
+		this.dateTime = dateTime;
+	}
+	
+	
+//	//constructor injection
+//	@Autowired
+//	public WishMessageGenerator(LocalDateTime dateTime, Date date) {
+//		System.out.println("WishMessageGenerator.WishMessageGenerator()");
+//		this.dateTime = dateTime;
+//		this.date = date;
+//	}
 	
 	
 	
