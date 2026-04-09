@@ -12,6 +12,7 @@
 	<!-- Spring bean config by enabling static factory method bean intalation -->
 	<bean id="ldt" class="java.time.LocalDateTime" factory-method="now"/>
 	
+
 	<bean id = "dt" class = "java.util.Date" />
 	
 	<!-- enable component sacanning to recongnize user-defined @component classes as spring beans -->
