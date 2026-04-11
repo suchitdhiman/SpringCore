@@ -21,6 +21,17 @@
 	<constructor-arg name="minute" value="23"></constructor-arg>
 	<constructor-arg name="second" value="23"></constructor-arg>
 	</bean>
+	
+	
+	<!-- Spring bean to create a abiguty problem -->
+    <bean id="localDateTime" class="java.time.LocalDateTime" factory-method = "of">
+	<constructor-arg name = "year" value ="2026"/>
+	<constructor-arg name="month" value="04"></constructor-arg>
+	<constructor-arg name="dayOfMonth" value="09"></constructor-arg>
+	<constructor-arg name="hour" value="23"></constructor-arg>
+	<constructor-arg name="minute" value="23"></constructor-arg>
+	<constructor-arg name="second" value="23"></constructor-arg>
+	</bean>
     
     <!-- Spring bean configuration using a static factory method -->
     <bean id="ld" class="java.time.LocalDate" factory-method="now" />

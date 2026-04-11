@@ -5,12 +5,15 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("fi")
 public class FiledInjection {
 	
 	@Autowired
+	//priority in all 3 types 
+	@Qualifier("ldt")
 	LocalDateTime localDateTime;
 	@Autowired
 	Date date;
