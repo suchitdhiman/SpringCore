@@ -20,10 +20,10 @@
          <!--  hikariCP connection -->
          <bean id="hkDs" class="com.zaxxer.hikari.HikariDataSource">
          <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-         <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+         <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe"/>
          <property name="username" value="system"/>
          <property name="password" value="sk8006424"/>      
-         <property name="minimumidle" value="10"/>
+         <property name="minimumIdle" value="10"/>
          <property name="maximumPoolSize" value="100" />
          <property name="idleTimeout" value="30000" />
          
